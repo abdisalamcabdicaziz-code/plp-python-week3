@@ -14,16 +14,16 @@ for score in scores:
         grade = "C"
     else:
         grade = "F"
-        
+
     print(f"Score: {score} - Grade: {grade}")
-    
+
     if score >= 50:
         passed_count += 1
     else:
         failed_count += 1
 
-average_score = total_score / len(scores)
+average_score = round(total_score / len(scores), 1)
 
 print(f"Passed: {passed_count}")
 print(f"Failed: {failed_count}")
-print(f"Average: {round(average_score, 1)}")
+print(f"Average: {average_score}")s
